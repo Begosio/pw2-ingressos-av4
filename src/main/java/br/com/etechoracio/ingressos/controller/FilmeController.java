@@ -3,6 +3,7 @@ package br.com.etechoracio.ingressos.controller;
 import br.com.etechoracio.ingressos.entity.Filme;
 import br.com.etechoracio.ingressos.enums.ClassificacaoIndicativaEnum;
 import br.com.etechoracio.ingressos.enums.SimNaoEnum;
+import br.com.etechoracio.ingressos.repositories.FilmeRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,14 +1,14 @@
 package br.com.etechoracio.ingressos.entity;
 
-import br.com.etechas.ingressos.enums.CategoriaFilmeEnum;
-import br.com.etechas.ingressos.enums.ClassificacaoIndicativaEnum;
-import br.com.etechas.ingressos.enums.SimNaoEnum;
+import br.com.etechoracio.ingressos.enums.CategoriaFilmeEnum;
+import br.com.etechoracio.ingressos.enums.ClassificacaoIndicativaEnum;
+import br.com.etechoracio.ingressos.enums.SimNaoEnum;
+import br.com.etechoracio.ingressos.repositories.FilmeRepository;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jdk.jshell.Snippet;
+import lombok.*;
 
+@Builder
 @Getter
 @Setter
 @AllArgsConstructor
