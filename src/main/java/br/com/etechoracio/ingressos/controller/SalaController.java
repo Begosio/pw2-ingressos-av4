@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,5 +37,9 @@ public class SalaController {
         }
     }
 
-
+    @PostMapping
+    public ResponseEntity<Sala> CadastrarSala(@RequestBody Sala sala){
+        var sala1 = salaRepository.save(sala);
+        return ResponseEntity.status(HttpStatus.CREATED).body(sala1);
+    }
 }
